@@ -15,7 +15,7 @@
 
 /* ── Reset ── */
 * { box-sizing: border-box; margin: 0; padding: 0; }
-body { background: var(--gray); color: var(--white); font-family: 'Barlow', sans-serif; font-weight: 300; }
+body { background: var(--black); color: var(--white); font-family: 'Barlow', sans-serif; font-weight: 300; }
 ul { list-style: none; }
 img { max-width: 100%; display: block; }
 html { scroll-behavior: smooth; }
@@ -38,16 +38,8 @@ nav {
   align-items: center;
   justify-content: space-between;
 }
-.logo {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 1.4rem;
-  letter-spacing: 3px;
-}
-nav ul {
-  display: flex;
-  align-items: center;
-  gap: 32px;
-}
+.logo { font-family: 'Bebas Neue', sans-serif; font-size: 1.4rem; letter-spacing: 3px; }
+nav ul { display: flex; align-items: center; gap: 32px; }
 nav ul li {
   font-size: 0.85rem;
   letter-spacing: 2px;
@@ -98,14 +90,7 @@ nav ul li button:hover { background: var(--red); color: var(--white); }
   letter-spacing: 2px;
   margin-bottom: 20px;
 }
-.Home-text h1 span { color: var(--red); }
-.Home-text p {
-  font-size: 1rem;
-  color: var(--gray);
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  margin-bottom: 40px;
-}
+.Home-text p { font-size: 1rem; color: var(--gray); letter-spacing: 2px; text-transform: uppercase; margin-bottom: 40px; }
 .Home-text button {
   background: var(--red);
   color: var(--white);
@@ -120,19 +105,10 @@ nav ul li button:hover { background: var(--red); color: var(--white); }
 }
 .Home-text button:hover { background: #cc1f1f; transform: translateY(-3px); }
 .Home-image { flex: 1; }
-.Home-image img {
-  width: 100%;
-  height: 500px;
-  object-fit: cover;
-  border-radius: 12px;
-  filter: brightness(0.85) contrast(1.1);
-}
+.Home-image img { width: 100%; height: 500px; object-fit: cover; border-radius: 12px; filter: brightness(0.85) contrast(1.1); }
 
 /* ── ABOUT ── */
-.About {
-  background: var(--dark);
-  padding: 90px 0;
-}
+.About { background: var(--dark); padding: 90px 0; }
 .About-text {
   max-width: 1200px;
   margin: 0 auto;
@@ -141,43 +117,18 @@ nav ul li button:hover { background: var(--red); color: var(--white); }
   grid-template-columns: 1.5fr 1fr 1fr 1fr;
   gap: 24px;
 }
-.About-card, .card {
-  background: var(--dark2);
-  border: 1px solid var(--dark3);
-  border-radius: 10px;
-  padding: 36px 28px;
-  transition: transform 0.3s;
-}
+.About-card, .card { background: var(--dark2); border: 1px solid var(--dark3); border-radius: 10px; padding: 36px 28px; transition: transform 0.3s; }
 .About-card { border-left: 4px solid var(--red); }
 .About-card:hover, .card:hover { transform: translateY(-6px); }
-.About-card h1 {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 2.2rem;
-  letter-spacing: 3px;
-  margin-bottom: 16px;
-}
+.About-card h1 { font-family: 'Bebas Neue', sans-serif; font-size: 2.2rem; letter-spacing: 3px; margin-bottom: 16px; }
 .About-card p { font-size: 0.9rem; color: var(--gray); line-height: 1.8; margin-bottom: 10px; }
-.card h3 {
-  font-size: 1rem;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  margin-bottom: 12px;
-  color: var(--white);
-}
+.card h3 { font-size: 1rem; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 12px; color: var(--white); }
+.card img { width: 100%; height: 140px; object-fit: cover; border-radius: 8px; margin-bottom: 14px; filter: brightness(0.8); transition: filter 0.3s; }
+.card:hover img { filter: brightness(1); }
 .card p { font-size: 0.88rem; color: var(--gray); line-height: 1.7; }
 
-/* Section headings (reused) */
-.About h1, section h1, section h2 {
-  font-family: 'Bebas Neue', sans-serif;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-}
-
 /* ── MEMBERSHIP ── */
-section[class*="Memeber"] {
-  padding: 90px 0;
-  background: var(--black);
-}
+section[class*="Memeber"] { padding: 90px 0; background: var(--black); }
 section[class*="Memeber"] > div {
   max-width: 1200px;
   margin: 0 auto;
@@ -207,45 +158,13 @@ section[class*="Memeber"] > div > h1 {
   overflow: hidden;
 }
 .Plan-card:hover { transform: translateY(-8px); }
-.Plan-card:nth-child(2) {
-  border-color: var(--red);
-  box-shadow: 0 0 30px rgba(255,59,59,0.2);
-}
-.Plan-card h3:first-child {
-  font-size: 0.85rem;
-  letter-spacing: 3px;
-  text-transform: uppercase;
-  color: var(--gray);
-  margin-bottom: 16px;
-}
-.Plan-card h3:nth-child(2) {
-  font-family: 'Bebas Neue', sans-serif;
-  font-size: 3.5rem;
-  color: var(--white);
-}
+.Plan-card:nth-child(2) { border-color: var(--red); box-shadow: 0 0 30px rgba(255,59,59,0.2); }
+.Plan-card h3:first-child { font-size: 0.85rem; letter-spacing: 3px; text-transform: uppercase; color: var(--gray); margin-bottom: 16px; }
+.Plan-card h3:nth-child(2) { font-family: 'Bebas Neue', sans-serif; font-size: 3.5rem; color: var(--white); }
 .Plan-card h3:nth-child(2)::before { content: '₹'; font-size: 1.2rem; color: var(--red); }
-.Plan-card > p {
-  font-size: 0.78rem;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: var(--gray);
-  margin-bottom: 24px;
-}
-.Plan-card ul {
-  border-top: 1px solid var(--dark3);
-  padding-top: 24px;
-  margin-bottom: 28px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  text-align: left;
-}
-.Plan-card ul li {
-  font-size: 0.9rem;
-  color: var(--gray-light);
-  padding-left: 16px;
-  position: relative;
-}
+.Plan-card > p { font-size: 0.78rem; letter-spacing: 2px; text-transform: uppercase; color: var(--gray); margin-bottom: 24px; }
+.Plan-card ul { border-top: 1px solid var(--dark3); padding-top: 24px; margin-bottom: 28px; display: flex; flex-direction: column; gap: 12px; text-align: left; }
+.Plan-card ul li { font-size: 0.9rem; color: var(--gray-light); padding-left: 16px; position: relative; }
 .Plan-card ul li::before { content: '—'; position: absolute; left: 0; color: var(--red); }
 .Plan-card button {
   width: 100%;
@@ -263,18 +182,39 @@ section[class*="Memeber"] > div > h1 {
 .Plan-card:nth-child(2) button { background: var(--red); border-color: var(--red); }
 .Plan-card button:hover { background: var(--red); border-color: var(--red); }
 
-/* ── CONTACT ── */
-.contact {
+/* ── TIMING ── */
+.timing {
   background: var(--dark);
   padding: 90px 0;
+  text-align: center;
 }
-.contact h2 {
+.timing h2 {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 2.8rem;
   letter-spacing: 4px;
-  text-align: center;
-  margin-bottom: 50px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
 }
+.timing h3 {
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gray-light);
+  padding: 18px 32px;
+  border: 1px solid var(--dark3);
+  border-left: 4px solid var(--red);
+  border-radius: 6px;
+  max-width: 420px;
+  margin: 0 auto 16px;
+  background: var(--dark2);
+  transition: transform 0.3s;
+}
+.timing h3:hover { transform: translateX(6px); color: var(--white); }
+
+/* ── CONTACT ── */
+.contact { background: var(--black); padding: 90px 0; }
+.contact h2 { font-family: 'Bebas Neue', sans-serif; font-size: 2.8rem; letter-spacing: 4px; text-align: center; margin-bottom: 50px; }
 .contact-box {
   max-width: 900px;
   margin: 0 auto;
@@ -284,41 +224,14 @@ section[class*="Memeber"] > div > h1 {
   gap: 40px;
   align-items: start;
 }
-.contact-box > p {
-  background: var(--dark2);
-  border-left: 3px solid var(--red);
-  border-radius: 6px;
-  padding: 16px 20px;
-  font-size: 0.9rem;
-  color: var(--gray-light);
-  letter-spacing: 1px;
-  transition: transform 0.3s;
-}
+.contact-box > p { background: var(--dark2); border-left: 3px solid var(--red); border-radius: 6px; padding: 16px 20px; font-size: 0.9rem; color: var(--gray-light); letter-spacing: 1px; transition: transform 0.3s; }
 .contact-box > p:hover { transform: translateX(4px); }
-.contact-box iframe {
-  grid-row: 1 / span 4;
-  grid-column: 2;
-  width: 100%;
-  height: 320px;
-  border-radius: 10px;
-  filter: grayscale(70%) brightness(0.75);
-  transition: filter 0.3s;
-}
+.contact-box iframe { grid-row: 1 / span 4; grid-column: 2; width: 100%; height: 320px; border-radius: 10px; filter: grayscale(70%) brightness(0.75); transition: filter 0.3s; }
 .contact-box iframe:hover { filter: grayscale(20%) brightness(0.9); }
 
 /* ── FOOTER ── */
-footer {
-  background: var(--dark2);
-  border-top: 1px solid rgba(255,59,59,0.15);
-  padding: 24px 40px;
-  text-align: center;
-}
-.footer {
-  font-size: 0.78rem;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  color: var(--gray);
-}
+footer { background: var(--dark2); border-top: 1px solid rgba(255,59,59,0.15); padding: 24px 40px; text-align: center; }
+.footer { font-size: 0.78rem; letter-spacing: 2px; text-transform: uppercase; color: var(--gray); }
 
 /* ── RESPONSIVE ── */
 @media (max-width: 1024px) {
@@ -337,7 +250,7 @@ footer {
   .About-text { grid-template-columns: 1fr; padding: 0 20px; }
   .About-card { grid-column: 1; }
   section[class*="Memeber"] > div { padding: 0 20px; flex-direction: column; }
-  .contact h2 { padding: 0 20px; }
+  .contact h2, .timing h2 { padding: 0 20px; }
   .contact-box { padding: 0 20px; }
   footer { padding: 20px; }
 }
